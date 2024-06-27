@@ -38,7 +38,7 @@ public class Main {
     public static int[] cleanInput(String num, int maxLength){
         // reverse input string
         String reversed = new StringBuilder(num).reverse().toString();
-        System.out.println(reversed);
+        // System.out.println(reversed);
         // split input string into int[]
         int[] result = new int[maxLength+1];
         for (int i = 0; i < reversed.length(); i++) {
@@ -53,8 +53,8 @@ public class Main {
             if (a[i] + b[j] > 9) {
                 a[i] = a[i] + b[j] - 10;
                 a[i+ 1] = a[i + 1] + 1;
-                System.out.println(a[i]);
-                System.out.println(a[i+1]);
+                // System.out.println(a[i]);
+                // System.out.println(a[i+1]);
             } else {
                 a[i] = a[i] + b[j];
             }
